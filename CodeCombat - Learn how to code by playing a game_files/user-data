@@ -1,0 +1,7 @@
+window.serverConfig = {"simulationThroughputRatio":1,"sessionSaveDelay":{"registered":{"min":10,"max":30},"anonymous":{"min":20,"max":60}},"showCodePlayAds":false,"latestAnnouncement":2,"picoCTF":false,"production":true,"codeNinjas":false,"fullUnsafeContentHostname":"codecombatprojects.com","buildInfo":{"sha":"2f6a37e20909f5f608377bfc09fc790a9f3a89d5"}};
+window.userObject = {"_id":"593d45115626c00030817f3e","createdOnHost":"codecombat.com","country":"germany","preferredLanguage":"de-DE","testGroupNumber":42,"anonymous":true,"__v":0,"referrer":"https:\/\/colorlib.com\/","dateCreated":"2017-06-11T13:26:41.461Z"};
+window.serverSession = {};
+window.features = {"freeOnly":false};
+window.me = {
+	get: function(attribute) { return window.userObject[attribute]; }
+};
