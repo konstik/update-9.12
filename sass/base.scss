@@ -1,0 +1,392 @@
+// update 04.03///
+
+*{
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+}
+
+body{
+	margin:0px; 
+	padding: 0px;
+	font-family:'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	
+	//font-family:'Open Sans','HelveticaNeue','Helvetica Neue',Helvetica, Arial,sans-serif;
+}
+
+$wrapper:'.wrapper';
+#{$wrapper}{
+	margin:0px;
+	padding-left:3%;
+
+
+$header:'.header';
+#{$header}{
+
+width:100%;
+	
+	&__logo{
+
+		width:100%;
+		
+		img{
+			width:40%;
+			}
+	}
+
+
+
+&__navy{
+	width:100%;
+	ul{
+		width:50%;
+		display:none;
+		
+		li{
+
+			a{
+				color:#999;
+				text-decoration:none;
+			}
+		}
+	}
+}
+	
+	
+	} //ende header
+
+$banner:'.banner';
+#{$banner}{
+	display:block;
+	position:relative;
+	
+
+
+	img{
+	display:block;
+	width:100%;
+	}
+
+	&__hotline{
+		width:50%;
+		position:absolute;
+		top:30%;
+		left:5%;
+
+		h1{
+		
+		color:#fff;
+		font-size:1.0em;
+		z-index:10000;
+		}
+
+	} //ende hotline
+
+	&__item{
+		position:absolute;
+		top:30%;
+		right:-5%;
+		width:50%;
+		margin-top:0%;
+		border-radius:3px;
+		background-color:#fff;
+		opasity:30%;
+
+		h4{
+			
+			font-size:0.8em;
+			
+			
+		}
+
+		button{
+				background-color:#0e4c60;
+				border-radius:2px;
+				color:#fff;
+				padding:1%;
+				border:none;
+				margin-bottom:1%;
+				margin-left:1%;
+			}
+
+		p{font-size:0.5em;}
+			
+	}
+		.spielen{
+			
+			background-color:#f0ac00;
+			
+			}
+
+	&__link{
+		
+		position:absolute;
+		top:90%;
+		left:40%;
+
+		p{
+			color:#fff;
+			font-size:0.5em;
+			}
+	}		
+
+} //ende banner	
+
+
+
+$content:'.content';
+#{$content}{
+	
+	padding:3%;
+	padding-left:0%;
+
+	&__row2	{
+		
+		&-link{
+
+			padding:3%;
+
+			h3{
+			font-size:1.0em;
+			color:#0E4C60;
+
+			}
+		}
+
+		&-rechts{
+
+			padding:3%;
+
+			p{font-size:0.8em;}
+
+		}
+	}
+
+	.row__center{	
+		
+
+		img{width:100%;}
+
+		p{
+			font-size:0.8em;
+			padding-left:0%;
+			padding-top:3%;
+			}
+	}
+
+
+	&__row3{
+
+		
+		display:block;
+		background:#999;
+		
+
+		&__col1{
+			padding-top:5%;
+			
+
+			&-icon{padding:1%;}
+
+			&-text{
+
+				&p{
+					xtext-align:center;}
+					text-align:center;}
+				&.img{width:100%;}	
+					
+		}
+
+	} //für desctop noch ergänzen//
+
+	&__offside{
+		padding:3%;
+		background:#0e4c60;
+
+		&__col1{
+			font-color:#fff;
+			
+
+			&--banner{
+				
+				font-color:#fff;
+				font-size:0.9em;
+			}
+			&--icon{
+
+
+			}
+		}
+	}
+
+
+
+
+} // ende content
+
+$offside: '.offside';
+#{$offside}{
+	
+	padding:3%;
+	
+
+	&__col1{
+	background:#0e4c60;
+
+	&--banner{
+			font-size:0.9em;
+			color:#fff;
+			
+			p{
+				display:table-cell;
+				padding-left:0%;
+				margin-top:-30px;}	
+		}
+
+		&--icon{
+		
+			color:fff;
+			font-size:0.9em;	
+			padding-top:3%;
+
+			img{padding-top:3%;}
+
+		}	
+			
+	}
+	
+
+	&__icon{
+		img{padding-top:5%;width:30%;}
+	}
+
+	button{padding-left:3%;margin:3%;}
+	
+	
+	&__col3{
+		padding:3%;
+		//background:#fff;
+
+		h3{
+			color:#000;
+			font-size:0.8em;
+			padding:2%;
+			}
+		&__col1{
+		
+			background-color:#fff;
+		}	
+
+	}
+
+	p{font-size:0.9em;padding-left:3%;}
+		
+}
+
+.content__offside-wieth{
+		background-color:#fff;
+		padding:3%;
+		padding-left:0%;
+
+		&__col1{
+			background-color:#fff;
+			&-banner{
+				background-color:#fff;
+			}
+		}
+
+} //ende offside
+
+
+$row3:'.row3';
+#{$row3}{
+	
+	&__col1{
+
+	img{
+		width:100%;
+		padding:5%;
+		padding-left:0%;
+		}
+	}
+}
+
+
+$row__center:'.row__center';
+#{$row__center}{
+	
+	padding:3%;
+
+	h3{font-size:1.2em;}
+	p{}
+	button{}
+	img{width:100%;}
+
+} //ende row__centzer
+
+
+$row4:'.row4';
+#{$row4}{
+	
+	display:block;
+
+	&__tab1{
+		display:block;
+
+	&-col1{
+		// display:table-cell; //--für desctop--//
+
+		p{
+		color:#000;
+		text-decoration:none;
+		padding-top:3%;
+		}
+
+	}
+	}
+
+}
+
+
+$footer: '.footer';
+#{$footer}{
+
+	.row4{
+		padding:3%;
+
+			&__tab1{
+
+				ul{
+
+				list-style-type:none;
+				
+				li{
+					padding:1%;
+
+					}
+				}
+			}
+
+			.copyright{
+
+				ul{
+
+				list-style-type:none;
+
+					li{
+						list-style-type:none;
+						font-size:0.7em;
+
+						img{width:40%;}
+						}
+				}
+			}
+	}
+	
+
+}// ende footer
+
+} //ende wrapper
+

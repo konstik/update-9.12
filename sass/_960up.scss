@@ -1,0 +1,448 @@
+//--Header--//
+
+$header:'.header';
+#{$header}{
+  //background:#000;
+  //display: block;
+  //position:fixed;
+  //width:100%;
+  //height: 80px;
+
+  &__logo{
+
+    img{
+    padding:10px;
+    display: table-cell;
+    }
+  }
+
+
+  &__botton{
+    
+   
+    margin-left: 15%;
+    margin-top: -47px;
+    float:left;
+
+    form{
+     
+      float:left;
+      margin-left: 10%;
+    }
+  } 
+
+  &__warenkorb{
+
+    float:right;
+    margin-top: -52px;   
+    color:#fff;
+  }
+
+  &__kreuz{
+
+    float:right;
+    margin-top: -52px;
+    margin-right: 15%;
+    color:#f00;
+    
+  }
+
+} // ende header
+
+
+$row: '.row';
+#{$row}{
+//margin-top:10px;
+
+
+
+  &__logo{
+  width: 22%;
+  float:left;
+  position:fixed;
+  margin-top:8%;
+  background:#fff;
+
+    img{
+      float:left;
+      width:35%;
+    }
+  }
+
+  &__navy{
+
+    display: block;
+    position: fixed;
+    margin-top: 8%;
+    left:100px;
+    width: 100%;
+    background-color:#fff;
+    height:36px;
+
+    
+
+    ul{
+     
+      color:#000;
+      display:block;
+      float:right;
+      margin-right: 160px;
+
+      li{
+        display:table-cell;
+        list-style-type:none;
+        color:#000;
+        padding-right:50px;
+
+      }
+    }
+    
+  }
+
+
+  &__banner{
+          width:100%;
+          //margin-top:12%;
+          
+          img{
+            width:100%;
+          }
+      }
+
+  &--Banner{
+
+    } 
+
+//ende banner
+
+} // ende row
+
+
+$content:'.content';
+#{$content}{
+  padding: 5px;
+
+
+  $row:'.row';
+  #{$row}{
+  
+    display: block;
+
+     
+
+    &__col2{
+
+      display: table-cell;
+
+      
+      &--l{
+          float:left;
+          width: 40%;
+
+         
+
+        h2{
+          text-align:right;
+          padding: 10px;
+          }
+
+        p{
+          text-align:right;
+          padding:10px 0;
+
+          }
+
+        button{
+          border:2px solid #999;
+        }
+
+        .kurz{
+
+          width:44%; 
+          margin-left:56%;
+
+          }
+
+      }
+
+      &--r{
+
+          width:50%;
+          float:right;
+          padding-right: 6%;
+          margin-top:-200px;
+
+          &--icon{float:left;width:30%;clear:both;}
+
+          &--text{float:right;width:60%;}
+      }
+
+      
+    }
+
+
+    &__col3{
+        display: block;
+
+        &--l{
+
+            width: 30%;
+            display: table-cell;
+            padding: 5px;
+        }
+
+    }
+
+    &__center{
+
+        display: block;
+        width: 100%;
+
+        &__slider{
+            display: block;
+
+          &--l{
+            display: table-cell;
+            width: 30%;
+          }
+        }
+    }
+
+
+    &__these{
+
+        display:block;
+
+      &__col2{
+
+        display: block;
+
+      &--r{
+        display:table-cell;
+            width: 60%;
+        
+        img{
+          display: table-cell;
+          width: 50%;
+        }
+
+      }
+
+
+      &--l{
+        
+            margin-left: 46%;
+            margin-top: -312px;
+      
+      }
+
+      }
+    } //ende these
+
+
+
+
+
+} //ende content row
+
+
+} //ende content    
+
+$row:'.row';  
+#{$row}{
+  width: 100%;
+  display: block;
+  
+  &__col2{
+    
+
+    &__l{
+      float:left; 
+      //width: 50%;
+
+        img{width: 100%;}
+
+      }
+    
+    &__r{ 
+      float:right; 
+      width: 50%;
+      padding-right: 5%;
+      margin-top:-250px;
+      }
+  }
+
+  &__team{
+    float: left;
+    width:50%;
+    border-bottom: 1px dashed #ccc;
+    padding: 20px;
+    border-right: 1px dashed #ccc;
+    line-height: 23px;
+    color: #666;
+    font-size: 16px;
+
+    &:nth-child(3),
+    &:last-child{
+      border-bottom: 0;
+    }
+    &:nth-child(2),
+    &:last-child{
+      border-right: 0;
+    }
+
+    &-icon{
+      float:left;
+      width:180px;
+      height: 180px;
+      margin: 0 20px;
+      
+      img{
+        border-radius: 50%;
+      }
+     } 
+     &-headline{
+      font-weight: 700;
+      color: #333;
+      margin-top: 30px;
+      span{
+        color: #666;
+        font-weight: 100;
+      }
+      a{
+        color: red;
+        text-decoration: none;
+      }
+     }
+  }
+}
+
+
+$row2:'.row2';
+#{$row2}{
+  
+  display: table-cell;
+  width:50%;
+
+ 
+
+ &__col2{
+    //display: block;
+    width: 100%;
+
+    &__l{
+      display:block;
+      width:100%;
+
+      &--icon{
+        border-radius:50%;
+        //margin-left: auto;
+        //margin-right: auto;
+        //padding-left:20%;
+        backgrpound-color:#c3512f;
+        img{
+         border-radius: 50%;
+         text-align: center;
+        }
+      } 
+
+      &--text{
+       
+        width:50%;
+        float:right;
+        margin-top: -162px;
+        margin-right: 38px;
+
+        
+      }
+
+    //&--icon{display: table-cell;}****** für tablet und desctop
+    //&--text{display: table-cell;****** für tablet und desctop
+
+      p{
+        display:table-cell;
+        padding:10px;
+
+
+        }
+        
+    } //col2__l
+
+
+  } //col2
+
+&--r{
+      width: 50%;
+      float:right;
+      margin-top:-200px;
+
+      &--icon{float:left;width:10px;backgrpound-color:#999;}
+    }
+
+&__col3{
+
+    display: block; 
+    border: 50px solid #999;
+    background-color:#999;
+
+    &_l{
+      text-align:center; 
+      position: relative;
+      margin:20px 0 60px;
+    
+      &--icon{
+        border: 2px solid #ccc;
+        border-radius:50%;
+        background:#ffffff;
+        width:80px;
+        height: 80px;
+        position: absolute;
+        left: 62px;
+          top:-35px;
+        
+
+
+        p{
+          font-size: 12px;
+          color:#00f;
+          padding-top: 20px;
+        }
+      }
+
+      &--text{
+        //padding: 10px;
+        background:#ffffff;
+        width: 30%;
+      float: left;
+      margin-right: 10px;
+      
+      h3{padding:20px;}
+
+      }
+    }
+
+  }
+
+&--Banner{
+    display:block;
+
+    ul{display:bloclk;
+
+      li{display: table-cell;
+
+        img{display: table-cell;width:100%;}
+      }
+    }
+}
+
+
+  }   //row2
+  
+
+
+  .content.row__team.row__team--icon.rund img{border-radius:50%;}   
+
+    
+
+
+
